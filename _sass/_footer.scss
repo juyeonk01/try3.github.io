@@ -1,0 +1,68 @@
+.page__footer .page__footer-inner {
+  width: 100% !important;
+  max-width: $content-width !important;
+  margin: 0 auto !important;
+  padding-left: 0 !important;    /* kill gutters so edges line up */
+  padding-right: 0 !important;
+}
+
+/* 1) LEFT-ALIGN EVERYTHING INSIDE THE FOOTER */
+.page__footer,                      /* outer footer */
+.page__footer .page__footer-inner,  /* inner wrapper (MM class) */
+.page__footer .footer__content,
+.page__footer p,
+.page__footer div {
+  text-align: left !important;
+}
+
+/* 3) REDUCE FOOTER HEIGHT (remove the big padding MM adds) */
+.page__footer {                     /* outer container padding */
+  padding: 0.5rem 0 !important;
+}
+.page__footer .page__footer-inner { /* inner wrapper padding */
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+/* kill default paragraph spacing that creates vertical gaps */
+.page__footer p { 
+  margin: 0.2rem 0 !important;
+}
+.page__footer:before {
+  display: none !important;
+}
+
+
+.page__footer .page__footer-inner {
+  border-top: 1px solid #666666 !important;
+  padding-top: 2rem !important; /* keep breathing room */
+  padding-bottom: 0.5rem !important;
+}
+.page__footer {
+  // border-top: 1px solid #808080 !important;
+  // background: #0F0F70 !important;     /* SNU Blue */
+  background: #FFFFFF !important;
+  color: #808080 !important;
+}
+/* Links on the blue footer */
+.page__footer a {
+  color: #DCDAB2 !important;          /* SNU Beige for contrast */
+  text-decoration: none;
+}
+.page__footer a:hover,
+.page__footer a:focus {
+  color: #C5A86F !important;           /* SNU Gold on hover */
+  text-decoration: underline;
+}
+/* department line: smaller text */
+.page__footer .dept {
+  font-size: 0.9rem;   /* tweak until you like it */
+  margin: 0 0 0.25rem 0 !important;
+  color: #666666; 
+}
+
+/* copyright line: even smaller */
+.page__footer .copyright {
+  font-size: 0.75rem;
+  margin: 0 !important;
+  color: #666666;
+}
