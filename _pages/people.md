@@ -1,5 +1,5 @@
 ---
-title: News
+title: People
 layout: single
 classes: wide
 ---
