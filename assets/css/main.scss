@@ -1,51 +1,25 @@
 ---
 ---
 
+/* 0) Skin (colors only) */
 @import "minimal-mistakes/skins/default";
+
+/* 1) Make the site wide */
+$max-width:     1800px;   /* outer container */
+$content-width: 1200px;   /* readable text column */
+
+/* 2) Load theme AFTER overriding variables */
 @import "minimal-mistakes";
 
-/* 2) Hard overrides to remove the reserved sidebar width and float */
-
-/* Hide any sidebar blocks that may still be rendered */
+/* 3) Absolutely remove any reserved sidebar space on single pages */
 .layout--single .sidebar,
-.layout--single .sticky,
-.layout--archive .sidebar,
-.layout--archive .sticky {
-  display: none !important;
+.layout--single .page__sidebar,
+.layout--single .sticky { display: none !important; }
+
+/* 4) Force the page to stop using the theme's calc(... - $right-sidebar-width) */
+.layout--single #main > .page {
+  float: none !important;
+  width: 80% !important;
+  margin: 0 auto !important;
 }
 
-/* Make the main content take full width and center it */
-.layout--single #main > .page,
-.layout--single #main > .archive,
-.layout--single #main > article.page,
-.layout--archive #main > .archive {
-  float: none !important;            /* remove theme's float:right */
-  width: 100% !important;            /* cancel calc(100% - sidebar-width) */
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 1600px;                 /* adjust to taste */
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* Inner wrappers sometimes carry side offsets; normalize them */
-.initial-content,
-.page__inner-wrap,
-.page__content,
-.archive__item {
-  margin-left: auto !important;
-  margin-right: auto !important;
-  max-width: 1600px;
-}
-
-/* Keep "wide" pages centered as well */
-.layout--single .page.wide {
-  max-width: 1800px;                 /* or any width you like */
-}
-
-/* Optional: ensure the outer main container doesn’t impose a grid offset */
-#main {
-  display: block !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
