@@ -23,6 +23,11 @@ url: "https://github.com/juyeonk01" # the base hostname & protocol for your site
 baseurl: "/try3.github.io/" # the subpath of your site, e.g. /blog
 
 remote_theme : mmistakes/minimal-mistakes
+minimal_mistakes_skin: default
+
+sass:
+  sourcemap: never
+
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
@@ -30,6 +35,17 @@ plugins:
   - jekyll-paginate
 
 markdown: kramdown
+
+defaults:
+  - scope:
+      path: ""     # whole site
+      type: pages  # your collection name
+    values:
+      author_profile: false
+      sidebar: null
+      sidebar_main: false
+      toc: false
+
 
 collections:
   pages:
