@@ -8,7 +8,7 @@ layout: single
 {%- assign all = site.data.publications -%}
 
 {%- comment -%} Submitted section {%- endcomment -%}
-<h3 class="pub-section">Submitted</h3>
+<h3 class="pub-section">Submitted / Preprint</h3>
 {%- assign subs = all | where: "status", "submitted" -%}
 {%- for p in subs -%}
 <p class="pub-item">

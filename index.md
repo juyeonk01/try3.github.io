@@ -28,7 +28,7 @@ TODO
       {% for item in recent_news %}
         <li class="news-row">
           <span class="news-date">{{ item.date | date: "%b %d" }}</span>
-          <span class="news-entry">{{ item.content | markdownify | strip_html | strip }}</span>
+          <span class="news-entry">{{ item.content | markdownify | strip }}</span>
         </li>
       {% endfor %}
     </ul>

@@ -5,30 +5,6 @@
   border-bottom: none !important;
 }
 
-// /* Grid: max 3 cards per row, centered block */
-// .people-grid {
-//   display: grid;
-//   grid-template-columns: repeat(3, minmax(0, 260px));
-//   justify-content: center;   /* center the grid as a whole */
-//   gap: 1.5rem 2rem;
-//   margin: 1rem auto 2rem;
-// }
-
-// /* Smart centering for 3-column sections */
-// @media (min-width: 901px) {              /* only when the grid has 3 columns */
-//   /* 1 person: put it in the middle column */
-//   .people-grid > .person-card:only-child {
-//     grid-column: 2;
-//   }
-//   /* 2 people: place them in columns 1 and 3 (with a gap in the middle) */
-//   .people-grid > .person-card:first-child:nth-last-child(2) {
-//     grid-column: 1;
-//   }
-//   .people-grid > .person-card:nth-child(2):last-child {
-//     grid-column: 3;
-//   }
-// }
-
 /* Default: 3 columns */
 .people-grid {
   display: grid;

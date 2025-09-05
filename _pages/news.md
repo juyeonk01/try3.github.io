@@ -1,5 +1,6 @@
 ---
 title: News
+classes: newspage
 layout: archive
 author_profile: false
 ---
@@ -17,7 +18,6 @@ author_profile: false
     <li class="news-row">
       <span class="news-date">{{ item.date | date: "%b %d" }}</span>
       <span class="news-entry">{{ item.content | markdownify | strip }}</span>
-      <!-- <span class="news-entry">{{ item.content | markdownify | strip_html | strip }}</span> -->
     </li>
   {% endfor %}
 </ul>
