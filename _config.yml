@@ -20,6 +20,7 @@ title: Causal Inference Lab
 url: "https://github.com/juyeonk01" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/try3.github.io/" # the subpath of your site, e.g. /blog
 
+logo: "/assets/images/snu-logo.png"
 
 remote_theme : mmistakes/minimal-mistakes
 minimal_mistakes_skin: default
