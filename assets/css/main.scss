@@ -164,3 +164,11 @@ body {
   font-weight: 500 !important;
 }
 
+h2 {
+  border-bottom: 1px solid rgba(48,48,48,0.2) !important;
+}
+
+.homepage h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
