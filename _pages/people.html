@@ -13,7 +13,7 @@ layout: single
 
 {% if members.size > 0 %}
 <h2 class="people-title">{{ title }}</h2>
-<div class="people-grid">
+<div class="people-grid{% if members.size == 2 %} two-people{% endif %}">
   {% for p in members %}
   <div class="person-card">
     <a class="person-photo" href="{{ p.url | relative_url }}">
@@ -22,7 +22,7 @@ layout: single
     <div class="person-name">
       <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
     </div>
-    <div class="person-meta">
+    <!-- <div class="person-meta">
       {% case role %}
         {% when "pi"  %} Professor
         {% when "postdoc"  %} Postdoc
@@ -30,9 +30,10 @@ layout: single
         {% when "ms"  %} M.S. Student
       {% endcase %}
       ({{ p.joined }}~)
-    </div>
+    </div> -->
   </div>
   {% endfor %}
 </div>
 {% endif %}
 {% endfor %}
+
