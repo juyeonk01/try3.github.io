@@ -1,0 +1,25 @@
+.greedy-nav .visible-links > li::before { content: none !important; }
+
+/* Desktop row only */
+.greedy-nav .visible-links { gap: 0; }
+
+.greedy-nav .visible-links > li + li {
+  border-left: 1px solid #d1d5db;   /* separator color */
+  margin-left: 0.3rem;               /* space before the bar */
+  padding-left: 0.3rem;              /* space after the bar */
+}
+
+/* Make sure the dropdown menu has no separators */
+.greedy-nav .hidden-links li {
+  border: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Optional: adjust density on small screens if some items remain visible */
+@media (max-width: 600px) {
+  .greedy-nav .visible-links > li + li {
+    margin-left: 0.63rem;
+    padding-left: 0.6rem;
+  }
+}

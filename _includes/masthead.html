@@ -20,9 +20,6 @@
                 {% if link.target %} target="{{ link.target }}"{% endif %}
               >{{ link.title }}</a>
             </li>
-            {% unless forloop.last %}
-              <li class="nav-separator">|</li>
-            {% endunless %}
           {%- endfor -%}
         </ul>
         {% if site.search == true %}

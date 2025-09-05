@@ -69,6 +69,7 @@ $h-size-6: 1em !default;
 @import "footer";
 @import "news";
 @import "person";
+@import "navigation";
 
 
 html {
@@ -178,8 +179,4 @@ h2 {
 
 
 
-.nav-separator {
-  display: inline-block;
-  margin: 0 0.1rem;
-  color: #aaa;   /* change to black if you want strong divider */
-}
+
