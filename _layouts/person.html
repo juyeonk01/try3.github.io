@@ -1,0 +1,29 @@
+---
+layout: single
+---
+
+<article class="person-page">
+  <header class="person-header">
+    <div class="person-header-photo">
+      <img src="{{ page.photo | relative_url }}" alt="{{ page.name }}">
+    </div>
+    <div class="person-header-text">
+      <h1>{{ page.name }}</h1>
+      <p class="person-header-meta">
+        {% case page.role %}
+          {% when "pi"  %} Professor
+          {% when "postdoc"  %} Postdoc
+          {% when "phd" %} Ph.D. Student
+          {% when "ms"  %} M.S. Student
+        {% endcase %}
+        ({{ page.joined }}~)
+      </p>
+      {% if page.website %}<p><a href="{{ page.website }}" rel="noopener">Website</a></p>{% endif %}
+      {% if page.email %}<p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>{% endif %}
+    </div>
+  </header>
+
+  <div class="page__content">
+    {{ content }}
+  </div>
+</article>

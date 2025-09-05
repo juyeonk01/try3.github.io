@@ -1,0 +1,38 @@
+---
+title: People
+layout: single
+---
+
+{% assign role_keys  = "pi|postdoc|phd|ms" | split: "|" %}
+{% assign role_titles = "Professor|Postdoc|Ph.D. Students|M.S. Students" | split: "|" %}
+
+{% for i in (0..3) %}
+{% assign role = role_keys[i] %}
+{% assign title = role_titles[i] %}
+{% assign members = site.people | where: "role", role | sort: "order" %}
+
+{% if members.size > 0 %}
+<h2 class="people-title">{{ title }}</h2>
+<div class="people-grid">
+  {% for p in members %}
+  <div class="person-card">
+    <a class="person-photo" href="{{ p.url | relative_url }}">
+      <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}">
+    </a>
+    <div class="person-name">
+      <a href="{{ p.url | relative_url }}">{{ p.name }}</a>
+    </div>
+    <div class="person-meta">
+      {% case role %}
+        {% when "pi"  %} Professor
+        {% when "postdoc"  %} Postdoc
+        {% when "phd" %} Ph.D. Student
+        {% when "ms"  %} M.S. Student
+      {% endcase %}
+      ({{ p.joined }}~)
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
