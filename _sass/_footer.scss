@@ -38,31 +38,22 @@
   padding-bottom: 0.5rem !important;
 }
 .page__footer {
-  // border-top: 1px solid #808080 !important;
-  // background: #0F0F70 !important;     /* SNU Blue */
   background: #FFFFFF !important;
   color: #808080 !important;
 }
-/* Links on the blue footer */
 .page__footer a {
-  color: #DCDAB2 !important;          /* SNU Beige for contrast */
+  color: #666666 !important;       
   text-decoration: none;
 }
 .page__footer a:hover,
 .page__footer a:focus {
-  color: #C5A86F !important;           /* SNU Gold on hover */
+  color: #333 !important;
   text-decoration: underline;
 }
-/* department line: smaller text */
-.page__footer .dept {
-  font-size: 0.9rem;   /* tweak until you like it */
-  margin: 0 0 0.25rem 0 !important;
-  color: #666666; 
-}
-
 /* copyright line: even smaller */
 .page__footer .copyright {
   font-size: 0.75rem;
   margin: 0 !important;
   color: #666666;
 }
+

@@ -183,3 +183,8 @@
 .layout--person h3 + ul {
   margin-top: 0.5rem !important;
 }
+
+
+.layout--person .page__meta {
+  display: none !important;
+}

@@ -3,7 +3,7 @@ title: Publications
 layout: single
 ---
 
-<p><em>*: equally contributing co-first authors</em></p>
+<!-- <p><em>*: equally contributing co-first authors</em></p> -->
 
 {%- assign all = site.data.publications -%}
 
