@@ -37,3 +37,26 @@ layout: single
 {% endif %}
 {% endfor %}
 
+
+<h2 class="people-title">Alumni</h2>
+
+<div class="alumni-wrap">
+  <table class="alumni-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Degree (Year)</th>
+        <th>Current Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for alum in site.data.alumni %}
+      <tr>
+        <td>{{ alum.name }}</td>
+        <td>{{ alum.degree }}</td>
+        <td>{{ alum.position }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

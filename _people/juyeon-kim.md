@@ -1,9 +1,23 @@
 ---
 layout: person
-name: Juyeon Kim       # only one field
-role: phd               # pi | phd | ms
+name: Juyeon Kim
+role: phd
 joined: 2024
-order: 3
 photo: /assets/images/people/juyeon-kim.jpg
+office: 25-408
+email: juyeonk@snu.ac.kr
 ---
-Ph.D. student interested in causal inference and machine learning.
+
+## Research topic
+
+* Overlap
+
+
+
+## Education
+
+* **Ph.D. in Statistics**, Seoul National University, Sep 2024 - Present
+
+* **B.S. in Statistics, B.S. Computer Science and Engineering**, Seoul National University, Mar 2020 - Aug 2024
+
+

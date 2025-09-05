@@ -20,7 +20,7 @@ Marshall Bruce Mathers III (born October 17, 1972)â€”otherwise known as Eminemâ€
 
   <div class="home-news-right">
     <ul class="news-list">
-      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 3 %}
+      {% assign recent_news = site.news | sort: 'date' | reverse | slice: 0, 5 %}
       {% for item in recent_news %}
         <li class="news-row">
           <span class="news-date">{{ item.date | date: "%b %d" }}</span>

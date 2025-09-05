@@ -52,9 +52,26 @@ $h-size-4: 1.0625em !default;
 $h-size-5: 1.03125em !default;
 $h-size-6: 1em !default;
 
+.page__header + .page__content {
+  padding-top: 1.5rem !important;   /* creates guaranteed gap */
+}
+
+
+.person-page .person-header {
+  margin-top: 0;                    /* don’t add extra on top of that gap */
+}
+
+
+
+
 
 /* 2) Load theme AFTER overriding variables */
 @import "minimal-mistakes";
+
+@import "footer";
+@import "news";
+@import "person";
+
 
 html {
     font-size: 12px; // change to whatever
@@ -102,9 +119,6 @@ table td {
 .pagination { display: none !important; }
 
 
-@import "footer";
-@import "news";
-@import "person";
 
 
 /* Background color */
@@ -148,4 +162,9 @@ body {
 
 .pub-title {
   font-weight: 500 !important;
+}
+
+
+.page__content p {
+  margin: 0.4rem 0;   /* smaller gap between lines */
 }

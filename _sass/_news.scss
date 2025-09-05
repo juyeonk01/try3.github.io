@@ -79,3 +79,12 @@ a.home-news-more:hover {
   .home-news { grid-template-columns: 1fr; }
   .home-news-left { margin-bottom: 0.5rem; }
 }
+
+.news-entry p {
+  display: inline;
+  margin: 0;
+}
+
+.news-list strong {
+  font-weight: 500 !important;
+}

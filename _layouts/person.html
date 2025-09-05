@@ -8,7 +8,6 @@ layout: single
       <img src="{{ page.photo | relative_url }}" alt="{{ page.name }}">
     </div>
     <div class="person-header-text">
-      <h1>{{ page.name }}</h1>
       <!-- <p class="person-header-meta">
         {% case page.role %}
           {% when "pi"  %} Professor
@@ -18,8 +17,24 @@ layout: single
         {% endcase %}
         ({{ page.joined }}~)
       </p> -->
-      {% if page.website %}<p><a href="{{ page.website }}" rel="noopener">Website</a></p>{% endif %}
-      {% if page.email %}<p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>{% endif %}
+      <div class="person-info">
+        {% if page.role %}
+            <p class="person-degree">
+            {% case page.role %}
+                {% when "pi" %} Professor
+                {% when "postdoc" %} Postdoctoral Fellow
+                {% when "phd" %} Ph.D. Student
+                {% when "ms" %} M.S. Student
+            {% endcase %}
+            </p>
+        {% endif %}
+        {% if page.office %}
+        <p><strong>Office:</strong> {{ page.office }}</p>
+        {% endif %}
+        {% if page.email %}
+        <p><strong>E-mail:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+        {% endif %}
+    </div>
     </div>
   </header>
 
