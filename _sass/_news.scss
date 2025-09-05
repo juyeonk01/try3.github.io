@@ -1,0 +1,81 @@
+.news-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.news-list h2 {
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.news-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+}
+
+.news-date {
+  flex: 0 0 80px; /* fixed width for date */
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.news-entry {
+  flex: 1;
+  line-height: 1.5;
+}
+
+
+/* Home page news block: left = title + "View more", right = list */
+.home-news {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  column-gap: 2rem;
+  align-items: start;
+  margin: 3rem 0 5rem;
+}
+
+.home-news-left h2 {
+  margin: 0 0 0.3rem 0;  /* small bottom margin */
+  padding: 0;
+  border-bottom: none !important;
+  line-height: 1.2;
+}
+
+.home-news-right {
+  display: flex;           /* 👈 add this */
+  flex-direction: column;  /* 👈 add this */
+  justify-content: flex-start; /* 👈 add this */
+}
+
+.home-news-left,
+.home-news-right { align-self: start; }
+
+/* remove the UL's default top margin */
+.home-news-right .news-list {
+  margin-top: 0;      /* key fix */
+  padding-left: 0;    /* tidy */
+}
+
+/* remove extra top padding on the first row */
+.home-news-right .news-row:first-child {
+  padding-top: 0;     /* key fix */
+}
+
+a.home-news-more,
+a.home-news-more:visited {
+  color: #808080 !important;
+  text-decoration: none;
+}
+
+a.home-news-more:hover {
+  color: #333 !important;
+}
+
+
+/* Mobile: stack */
+@media (max-width: 768px) {
+  .home-news { grid-template-columns: 1fr; }
+  .home-news-left { margin-bottom: 0.5rem; }
+}
