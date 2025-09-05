@@ -1,29 +1,22 @@
 ---
 title: News
-layout: single
-classes: wide
+layout: archive
+author_profile: false
 ---
 
-{% assign news = site.data.news %}
-{% if news and news.size > 0 %}
-<h3>News</h3>
-<table class="news-table">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Event</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign news_items = news | sort: "date" | reverse %}
-    {% for item in news_items %}
-      <tr>
-        <td>{{ item.date }}</td>
-        <td>{{ item.text | markdownify }}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-{% else %}
-<p>No news yet. Check back soon!</p>
-{% endif %}
+{% assign news_items = site.news | sort: 'date' | reverse %}
+{% assign current_year = "" %}
+
+<ul class="news-list">
+  {% for item in news_items %}
+    {% assign year = item.date | date: "%Y" %}
+    {% if year != current_year %}
+      <h2 class="news-year">{{ year }}</h2>
+      {% assign current_year = year %}
+    {% endif %}
+    <li class="news-row">
+      <span class="news-date">{{ item.date | date: "%b %d" }}</span>
+      <span class="news-entry">{{ item.content | markdownify | strip_html | strip }}</span>
+    </li>
+  {% endfor %}
+</ul>

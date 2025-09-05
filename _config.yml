@@ -53,6 +53,9 @@ collections:
   people:
     output: true
     permalink: /people/:name/
+  news:
+    output: false
+    permalink: /news/:path/
 
 # Remove the Wi-Fi icon + FEED
 atom_feed:
