@@ -88,7 +88,7 @@
   grid-template-columns: 220px 1fr;
   gap: 1.75rem;        
   align-items: center;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
 }
 
 .person-header-photo {
@@ -113,7 +113,6 @@
   line-height: 1.4; 
 }
 
-
 .edu-sub {
   margin-left: 1.5rem;
   display: block;
@@ -128,6 +127,7 @@
 .person-page h3 {
   border-bottom: none !important;
   margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
 }
 
 .person-page strong {
@@ -144,6 +144,9 @@
   margin-top: 5rem;  /* bigger gap for subsequent sections */
 }
 
+.person-page p {
+  margin: 0.4rem 0;   /* smaller gap between lines */
+}
 
 /* Alumni */
 .alumni-wrap {
@@ -170,3 +173,13 @@
 
 .alumni-table th { font-weight: 500; text-align: left; }
 .alumni-table td:first-child { font-weight: 500; }
+
+.layout--person h2 {
+  margin-top: 2rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.layout--person h2 + ul,
+.layout--person h3 + ul {
+  margin-top: 0.5rem !important;
+}
