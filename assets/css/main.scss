@@ -106,7 +106,31 @@ table td {
 @import "news";
 
 
+/* Background color */
+body {
+  background-color: #FAFAFA;
+}
 
+.masthead,
+.masthead__inner-wrap,
+.greedy-nav {
+  background-color: #FAFAFA !important;
+  box-shadow: none !important;
+}
+
+.page__footer {
+  background-color: #FAFAFA !important;
+}
+
+/* Spacing */
+.page__title,
+.page__meta {
+  margin-top: 1.5rem;   /* adjust as you like: 1rem–3rem */
+}
+
+.page__header {
+  padding-top: 1.5rem;  /* in case .page__title is wrapped */
+}
 
 
 
