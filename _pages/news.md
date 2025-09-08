@@ -2,6 +2,7 @@
 title: News
 classes: newspage
 layout: archive
+classes: news
 author_profile: false
 ---
 

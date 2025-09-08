@@ -165,18 +165,61 @@
   display: none !important;
 }
 
-.person-links { margin-top: 1.2rem !important; }
-.person-links .icon-link { display: inline-flex; align-items: center; gap: .35rem; }
-.person-links svg { width: 1em; height: 1em; }
-.visually-hidden {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+
+
+
+/* Person page: icon + text rows (Office / Email / Website) */
+.person-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;            /* vertical space between rows */
+  margin-top: 0.5rem;
 }
 
-.email-link {
-  color: #333 !important;      /* black */
-  text-decoration: none;       /* remove underline */
+.person-contacts .contact-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;             /* horizontal space between icon and text */
 }
-.email-link:hover {
-  text-decoration: underline;  /* subtle underline on hover */
+
+.person-contacts .icon {
+  width: 1.15rem;          /* fixed icon column */
+  height: 1.15rem;
+  flex: 0 0 1.15rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;     /* inherit text color */
+}
+
+.person-contacts .icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  stroke: currentColor;
+  color: #253F7C;
+}
+
+.person-contacts .text {
+  flex: 1 1 auto;          /* text takes remaining width */
+  min-width: 0;            /* prevents weird shrinking */
+  line-height: 1.5;        /* comfortable line height */
+}
+
+/* Links: black, tidy wrapping for long URLs */
+.person-contacts .email-link,
+.person-contacts .website-link {
+  color: #333 !important;
+  text-decoration: none;
+}
+
+.person-contacts .email-link:hover,
+.person-contacts .website-link:hover {
+  text-decoration: underline;
+}
+
+/* Let only the website URL break anywhere if it’s long */
+.person-contacts .website-link {
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
