@@ -164,3 +164,19 @@
 .layout--person .page__meta {
   display: none !important;
 }
+
+.person-links { margin-top: 1.2rem !important; }
+.person-links .icon-link { display: inline-flex; align-items: center; gap: .35rem; }
+.person-links svg { width: 1em; height: 1em; }
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+.email-link {
+  color: #333 !important;      /* black */
+  text-decoration: none;       /* remove underline */
+}
+.email-link:hover {
+  text-decoration: underline;  /* subtle underline on hover */
+}

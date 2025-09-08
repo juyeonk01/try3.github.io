@@ -3,6 +3,7 @@ layout: person
 name: Juyeon Kim
 role: phd
 joined: 2024
+order: 3
 photo: /assets/images/people/juyeon-kim.jpg
 office: 25-408
 email: juyeonk@snu.ac.kr

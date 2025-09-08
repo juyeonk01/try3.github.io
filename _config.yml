@@ -24,6 +24,7 @@ logo: "/assets/images/snu-logo.png"
 
 remote_theme : mmistakes/minimal-mistakes
 minimal_mistakes_skin: default
+fontawesome: true
 
 sass:
   sourcemap: never
