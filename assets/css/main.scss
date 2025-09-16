@@ -163,10 +163,6 @@ body {
   font-weight: 500 !important;
 }
 
-h2 {
-  border-bottom: 1px solid rgba(48,48,48,0.2) !important;
-}
-
 .homepage h2 {
   border-bottom: none !important;
   padding-bottom: 0 !important;
@@ -181,5 +177,16 @@ h2 {
 .causal-image {
   display: block;
   margin: 0 auto 3rem auto !important;
+}
+
+
+
+.seminar-page h2 {
+  border-bottom: 1px solid rgba(48,48,48,0.2) !important;
+  margin-top: 4rem !important; 
+}
+
+.seminar-page h2:first-of-type {
+  margin-top: 1.5rem !important;
 }
 

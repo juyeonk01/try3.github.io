@@ -1,7 +1,7 @@
 ---
 title: Seminar
 layout: single
-classes: wide
+classes: seminar-page
 ---
 
 
@@ -22,6 +22,7 @@ classes: wide
 ### Book review
 
 * High-dimensional Statistics: A Non-Asymptotic Viewpoint (Martin J. Wainwright, 2019)
+
 
 
 ## 2023-24 Lab Seminar

@@ -22,8 +22,10 @@ entries_layout: list
 * People
   * Professor
 * Seminar
+  * 2024 2 reviews
   * Symposium
-  * Publications - prof
+* Publications
+  * Professor
 
 
 <div class="home-news">
