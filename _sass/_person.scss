@@ -241,3 +241,20 @@
   color: #333;
   text-decoration: underline; /* optional */
 }
+
+
+.person-page .person-header {
+  margin-top: 0;
+}
+
+
+
+
+/* unify table text with normal body text */
+table,
+table th,
+table td {
+  font-family: $global-font-family !important;
+  font-size: 1em !important;   /* match body size */
+  font-weight: normal;
+}

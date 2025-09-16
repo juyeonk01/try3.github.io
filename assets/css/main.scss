@@ -1,35 +1,23 @@
 ---
 ---
 
-/* 0) Skin (colors only) */
 @import "minimal-mistakes/skins/default";
 
-/* 1) Make the site wide */
 $max-width:     1800px;   /* outer container */
 $content-width: 1200px;   /* readable text column */
 $right-sidebar-width: 0; 
 
-/* system typefaces */
-$serif: "Libre Baskerville", "Tienne", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif !default;
+/* ------------------------------------------------------------------------------------ */
+/* typefaces */
+$serif: "Libre Baskerville", "Merriweather", "Hedvig Letters Serif", Georgia, Lora, Times, serif !default;
 $sans-serif: "Work Sans", "Public Sans", "Helvetica Neue", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
    "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
-
-/* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
-$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
-
-/* serif typefaces */
-$georgia: Georgia, serif !default;
-$times: Times, serif !default;
-$bodoni: "Bodoni MT", serif !default;
-$calisto: "Calisto MT", serif !default;
-$garamond: Garamond, serif !default;
 
 $global-font-family           : $sans-serif !default;
 $header-font-family           : $serif !default;
 $caption-font-family          : $sans-serif !default;
-
 
 /* type scale */
 $type-size-1: 2.441em !default;
@@ -42,28 +30,15 @@ $type-size-7: 0.8em !default;
 $type-size-8: 0.625em !default;
 
 /* headline scale */
-// $h-size-1: 1.563em !default;
-// $h-size-2: 1.25em !default;
-// $h-size-3: 1.125em !default;
 $h-size-1: 2em !default; // bigger h1
 $h-size-2: 1.4em !default; // bigger h2
 $h-size-3: 1.2em  !default; // bigger h3
 $h-size-4: 1.0625em !default;
 $h-size-5: 1.03125em !default;
 $h-size-6: 1em !default;
+/* ------------------------------------------------------------------------------------ */
 
-.page__header + .page__content {
-  padding-top: 1.5rem !important;   /* creates guaranteed gap */
-}
-
-
-.person-page .person-header {
-  margin-top: 0;                    /* don’t add extra on top of that gap */
-}
-
-
-
-/* 2) Load theme AFTER overriding variables */
+/* Load theme AFTER overriding variables */
 @import "minimal-mistakes";
 
 @import "footer";
@@ -73,37 +48,24 @@ $h-size-6: 1em !default;
 
 
 html {
-    font-size: 12px; // change to whatever
-  
+    font-size: 12px;
     @include breakpoint($medium) {
-      font-size: 14px; // change to whatever
+      font-size: 14px;
     }
-  
     @include breakpoint($large) {
-      font-size: 16px; // change to whatever
+      font-size: 16px;
     }
-  
     @include breakpoint($x-large) {
-      font-size: 18px; // change to whatever
+      font-size: 18px;
     }
   }
 
-/* unify table text with normal body text */
-table,
-table th,
-table td {
-  font-family: $global-font-family !important;
-  font-size: 1em !important;   /* match body size */
-  font-weight: normal;
-}
-
-
-/* 3) Absolutely remove any reserved sidebar space on single pages */
+/* Absolutely remove any reserved sidebar space on single pages */
 .layout--single .sidebar,
 .layout--single .page__sidebar,
 .layout--single .sticky { display: none !important; }
 
-/* 4) Force the page to stop using the theme's calc(... - $right-sidebar-width) */
+/* Force the page to stop using the theme's calc(... - $right-sidebar-width) */
 /* Page width = content width */
 .layout--single #main > .page {
   float: none !important;
@@ -112,14 +74,9 @@ table td {
   margin: 0 auto !important;
 }
 
-
-
 /* hide prev/next pager under pages/posts */
 .pagination { display: none !important; }
-
-
-
-
+/* ------------------------------------------------------------------------------------ */
 /* Background color */
 body {
   background-color: #FAFAFA;
@@ -136,22 +93,40 @@ body {
   background-color: #FAFAFA !important;
 }
 
+
 /* Spacing */
 .page__title,
 .page__meta {
-  margin-top: 1.5rem;   /* adjust as you like: 1rem–3rem */
+  margin-top: 1.5rem; 
 }
 
 .page__header {
-  padding-top: 1.5rem;  /* in case .page__title is wrapped */
+  padding-top: 1.5rem;
+}
+
+.page__header + .page__content {
+  padding-top: 1.5rem !important;
 }
 
 
+/* ------------------------------------------------------------------------------------ */
+/* Homepage */
+.homepage h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
 
+.causal-image {
+  display: block;
+  margin: 0 auto 3rem auto !important;
+}
+
+
+/* Publications page */
 .pub-section {
   border-top: 2px solid rgba(0,0,0,.2);
-  margin: 2rem 0 1rem;      /* equal space above and below block */
-  padding-top: 1.25rem; /* space between line and heading text */
+  margin: 2rem 0 1rem;  
+  padding-top: 1.25rem; 
 }
 
 .pub-item {
@@ -163,24 +138,8 @@ body {
   font-weight: 500 !important;
 }
 
-.homepage h2 {
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
-}
 
-.newspage h2 {
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
-}
-
-
-.causal-image {
-  display: block;
-  margin: 0 auto 3rem auto !important;
-}
-
-
-
+/* Seminar page */
 .seminar-page h2 {
   border-bottom: 1px solid rgba(48,48,48,0.2) !important;
   margin-top: 4rem !important; 
