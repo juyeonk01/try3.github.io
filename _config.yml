@@ -58,6 +58,9 @@ collections:
   news:
     output: false
     permalink: /news/:path/
+  projects:
+    output: false
+    permalink: /research/:name/
 
 # Remove the Wi-Fi icon + FEED
 atom_feed:
