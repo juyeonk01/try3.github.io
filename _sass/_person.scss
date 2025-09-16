@@ -223,3 +223,10 @@
   overflow-wrap: anywhere;
   word-break: normal;
 }
+
+
+.person-header-meta {
+  font-size: 1.25rem;  /* bigger text */
+  font-weight: 600;    /* optional: make it bold */
+  line-height: 1.4;    /* spacing tweak */
+}
