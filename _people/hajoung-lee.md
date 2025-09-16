@@ -6,6 +6,7 @@ order: 1
 photo: /assets/images/people/hajoung-lee.jpg
 office: 129-105
 email: hajounglee2@gmail.com
+cv: /assets/cv/hajoung-lee-cv.pdf
 ---
 
 
