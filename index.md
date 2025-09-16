@@ -9,18 +9,21 @@ entries_layout: list
 
 ![Causal](/assets/images/causal.png){: .align-center .causal-image}
 
-TODO
-
-- Brief introduction of our lab
-- Causal Inference
-- Image?
 
 
-## Research interests / topics
 
-TODO
+## To Do
 
-- Current research topics
+* Home
+  * Brief introduction of our lab
+  * Simple research info
+* Research
+  * Add
+* People
+  * Professor
+* Seminar
+  * Symposium
+  * Publications - prof
 
 
 <div class="home-news">

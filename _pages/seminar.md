@@ -6,10 +6,6 @@ classes: wide
 
 
 
-## 2025 Symposium on Causal Inference [2024.07.01]
-
-Hmm
-
 ## 2025 Lab Seminar
 
 ### Paper reviews
@@ -28,12 +24,13 @@ Hmm
 * High-dimensional Statistics: A Non-Asymptotic Viewpoint (Martin J. Wainwright, 2019)
 
 
-## 2024 Symposium on Causal Inference [2024.08.27-28]
+## 2023-24 Lab Seminar
 
-Hmm
 
-## 2024 Lab Seminar
+### Paper reviews
 
+* ?? Mendelian Randomization
+* ?? Influence Function and Efficiency Theory
 * Probabilities of causation: three counterfactual interpretations and their identification (Pearl, 1999)  
 * Sensitivity analysis for matched observational studies with continuous exposures and binary outcomes (Zhang, Small, and Rosenbaum, 2011)  
 * Robust estimation of causal effects via a high-dimensional covariate balancing propensity score (Ning, Peng, and Imai, 2020)  
@@ -49,6 +46,11 @@ Hmm
 * Finding influential subjects in a network using a causal framework (Lee, Kim, and Wang, 2023)  
 * Neural score matching for high-dimensional causal inference (Clivio, Mikkelsen, and van der Laan, 2022)  
 
+
+### Book review
+
+* Handbook of Matching and Weighting Adjustments for Causal Inference (José R. Zubizarreta, Elizabeth A. Stuart, Dylan S. Small, Paul R. Rosenbaum, eds., 2023) [Ch11-Ch19, Ch26]
+* Causal Inference: What If (Miguel A. Hernán & James M. Robins, 2020) [Ch10-23]
 
 
 
