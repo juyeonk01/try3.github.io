@@ -157,5 +157,50 @@ body {
 }
 
 /* Research page */
+.research-page {
+  h1 {
+    margin-bottom: 1.5rem;
+  }
+
+  .project {
+    margin-bottom: 2rem;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #333; /* navy tone */
+  }
+
+  .keywords {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+    margin-right: 0.4rem;
+    font-weight: 600;
+    color: #253F7C;
+  }
+
+  .authors {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #444;
+    font-style: italic;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 2rem 0;
+  }
+}
 
 

@@ -1,8 +1,7 @@
 ---
 title: News
-classes: newspage
-layout: archive
-classes: news
+layout: single
+classes: news-page
 author_profile: false
 ---
 

@@ -18,7 +18,9 @@ entries_layout: list
   * Brief introduction of our lab
   * Simple research info
 * Research
-  * Add
+  * Edit keywords
+  * Image?
+  * Name of author?
 * People
   * Professor
 * Seminar
