@@ -7,7 +7,9 @@ layout: single
 
 {%- assign all = site.data.publications -%}
 
+
 {%- comment -%} Submitted section {%- endcomment -%}
+
 <h3 class="pub-section">Submitted / Preprint</h3>
 {%- assign subs = all | where: "status", "submitted" -%}
 {%- for p in subs -%}
@@ -20,9 +22,12 @@ layout: single
 </p>
 {%- endfor -%}
 
+
 {%- comment -%} Published section {%- endcomment -%}
+
 <h3 class="pub-section">Publications</h3>
-{%- assign pubs = all | where: "status", "published" -%}
+
+<!-- {%- assign pubs = all | where: "status", "published" -%}
 {%- for p in pubs -%}
 <p class="pub-item">
   {{ p.authors }} ({{ p.year }}). 
@@ -31,4 +36,34 @@ layout: single
   {%- if p.links.arxiv and p.links.arxiv != "" %} [<a href="{{ p.links.arxiv }}">arXiv</a>]{% endif -%}
   {%- if p.links.paper and p.links.paper != "" %} [<a href="{{ p.links.paper }}">paper</a>]{% endif -%}
 </p>
+{%- endfor -%} -->
+
+{%- assign pubs = site.data.publications | where: "status", "published" -%}
+{%- assign pubs_by_year = pubs | group_by: "year" -%}
+{%- assign sorted_groups = pubs_by_year | sort: "name" | reverse -%}
+
+{%- assign before_printed = false -%}
+
+{%- for group in sorted_groups -%}
+  {%- assign y = group.name | plus: 0 -%}
+
+  {%- if y < 2025 -%}
+    {%- if before_printed == false -%}
+      <h4 class="pub-year">-2025</h4>
+      {%- assign before_printed = true -%}
+    {%- endif -%}
+  {%- else -%}
+    <h4 class="pub-year">{{ y }}</h4>
+  {%- endif -%}
+
+  {%- for p in group.items -%}
+    <p class="pub-item">
+      {{ p.authors }} ({{ p.year }}). 
+      <span class="pub-title">{{ p.title }}</span>
+      {{ p.venue }}
+      {%- if p.links.arxiv and p.links.arxiv != "" %} [<a href="{{ p.links.arxiv }}">arXiv</a>]{% endif -%}
+      {%- if p.links.paper and p.links.paper != "" %} [<a href="{{ p.links.paper }}">paper</a>]{% endif -%}
+    </p>
+  {%- endfor -%}
+
 {%- endfor -%}

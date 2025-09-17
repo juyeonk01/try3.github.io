@@ -4,7 +4,7 @@ layout: single
 classes: research-page
 ---
 
-
+<hr>
 
 <div class="project">
     <h3>Mixing Samples to Address Weak Overlap in Causal Inference</h3>
@@ -19,7 +19,7 @@ classes: research-page
 
 
 <div class="project">
-    <h3>Quantifying Overlap in Causal Inference:  A Framework for Early-Stage Assessment</h3>
+    <h3>Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment</h3>
     <p class="keywords">Overlap, Mixture Model</p>
     <p class="authors">Geondo Park, Juyeon Kim</p>
     <p>

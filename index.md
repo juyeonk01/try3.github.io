@@ -17,17 +17,43 @@ entries_layout: list
 * Home
   * Brief introduction of our lab
   * Simple research info
+  * Navigation bar - combine pages?
 * Research
   * Edit keywords
   * Image?
   * Name of author?
+* Publications
+  * Add arXiv link / paper link
+  * Add DOI
 * People
   * Professor
+  * Better alumni table
 * Seminar
   * 2024 2 reviews
   * Symposium
 * Publications
   * Professor
+
+
+<div class="topics-grid">
+  <div class="topic-card">Matching and Weighting</div>
+  <div class="topic-card">Randomization Designs and Analysis</div>
+  <div class="topic-card">Sensitivity Analysis</div>
+</div>
+
+
+<div class="topics-tags">
+  <span class="tag" style="background:#D2E1D8; color:#607DBC;">Matching and Weighting</span>
+  <span class="tag" style="background:#607DBC; color:#D2E1D8;">Randomization Designs</span>
+  <span class="tag" style="background:#D2E1D8; color:#607DBC;">Sensitivity Analysis</span>
+</div>
+
+
+<div class="topics-tags">
+  <span class="tag" style="background:#607DBC; color:#D2E1D8;">Matching and Weighting</span>
+  <span class="tag" style="background:#607DBC; color:#D2E1D8;">Randomization Designs</span>
+  <span class="tag" style="background:#607DBC; color:#D2E1D8;">Sensitivity Analysis</span>
+</div>
 
 
 <div class="home-news">
