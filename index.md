@@ -24,6 +24,7 @@ entries_layout: list
   * Name of author?
 * Publications
   * Add arXiv link / paper link
+  * Logo 미세조정
   * Add DOI
 * People
   * Professor

@@ -188,6 +188,33 @@ body {
   font-weight: 500 !important;
 }
 
+.pub-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  vertical-align: middle !important;
+}
+
+.pub-link:first-of-type .pub-icon {
+  margin-left: 0rem !important;
+}
+
+.pub-link {
+  display: inline-block;   /* keeps it aligned to text */
+  line-height: 1;          /* avoids extra vertical space */
+  vertical-align: middle !important;  /* align anchor itself */
+  text-decoration: none !important;   /* removes underline */
+}
+
+.pub-icon:hover {
+  opacity: 1;
+}
+.pub-link img {
+  display: inline-block;
+}
 
 /* Seminar page */
 .seminar-page h2 {

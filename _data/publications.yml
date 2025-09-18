@@ -6,7 +6,7 @@
   authors: "Bong, S., and Lee, K."
   title: "Local causal effects with continuous exposures: A matching estimator for the average derivative effect."
   venue: "Submitted."
-  links: { arxiv: "" }
+  links: { arxiv: "https://arxiv.org/abs/2311.18532" }
 
 - year: 2025
   status: submitted
@@ -138,4 +138,4 @@
   authors: "Lee, K., Small, D. S., Hsu, J. Y., Silber, J. H., and Rosenbaum, P. R."
   title: "Discovering effect modification in an observational study of surgical mortality at hospitals with superior nursing."
   venue: "Journal of the Royal Statistical Society, Series A, 181(2), 535–546."
-  links: { arxiv: "", paper: "" }
+  links: { arxiv: "https://arxiv.org/abs/1605.03872", paper: "https://rss.onlinelibrary.wiley.com/doi/full/10.1111/rssa.12298" }
