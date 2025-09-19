@@ -276,7 +276,7 @@ body {
 
 .abstract-text {
   display: -webkit-box;
-  -webkit-line-clamp: 3;     /* number of lines before cutting */
+  -webkit-line-clamp: 3;    
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -288,26 +288,37 @@ body {
   overflow: visible;
 }
 
-.toggle-abstract {
-  background: none;
-  border: none;
-  color: #133DA8;
-  cursor: pointer;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-  display: flex;
-  align-items: center;
-}
+// .toggle-abstract {
+//   background: none;
+//   border: none;
+//   color: #133DA8;
+//   cursor: pointer;
+//   font-size: 0.9rem;
+//   margin-top: 0.5rem;
+//   display: flex;
+//   align-items: center;
+// }
 
-.toggle-abstract .arrow {
-  display: inline-block;
-  margin-right: 5px;
+// .toggle-abstract.open .arrow {
+//   transform: rotate(90deg);
+// }
+
+.toggle-abstract {
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #133DA8;
+  margin-top: 0.3rem;
+  user-select: none;
   transition: transform 0.2s ease;
 }
 
-.toggle-abstract.open .arrow {
-  transform: rotate(90deg);
+.toggle-abstract.open {
+  transform: rotate(180deg); /* ▼ becomes ▲ */
 }
+
+
+
 
 
 

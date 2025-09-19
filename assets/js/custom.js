@@ -1,17 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll(".toggle-abstract").forEach(function(btn) {
-    btn.addEventListener("click", function() {
-      const abstract = btn.previousElementSibling; // the <p>
-      const arrow = btn.querySelector(".arrow");
+  document.querySelectorAll(".toggle-abstract").forEach(function(toggle) {
+    toggle.addEventListener("click", function() {
+      const abstract = toggle.previousElementSibling;
 
       if (abstract.classList.contains("expanded")) {
         abstract.classList.remove("expanded");
-        btn.classList.remove("open");
-        btn.innerHTML = '<span class="arrow">▶</span> Show more';
+        toggle.classList.remove("open");
       } else {
         abstract.classList.add("expanded");
-        btn.classList.add("open");
-        btn.innerHTML = '<span class="arrow">▶</span> Show less';
+        toggle.classList.add("open");
       }
     });
   });
