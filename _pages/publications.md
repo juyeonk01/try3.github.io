@@ -20,17 +20,16 @@ layout: single
   <!-- {%- if p.links.arxiv and p.links.arxiv != "" %} [<a href="{{ p.links.arxiv }}">arXiv</a>]{% endif -%}
   {%- if p.links.paper and p.links.paper != "" %} [<a href="{{ p.links.paper }}">paper</a>]{% endif -%} -->
   {%- if p.links.arxiv and p.links.arxiv != "" %}
-    <a href="{{ p.links.arxiv }}" target="_blank">
-      <img src="/assets/icons/arxiv.svg" alt="arXiv" class="pub-icon">
+    <a href="{{ p.links.arxiv }}" target="_blank" class="pub-link">
+      <img src="{{ '/assets/icons/arxiv.svg' | relative_url }}" alt="arXiv" class="pub-icon">
     </a>
   {%- endif -%}
   {%- if p.links.paper and p.links.paper != "" %}
-    <a href="{{ p.links.paper }}" target="_blank">
-      <img src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/svgs/solid/file-pdf.svg" 
-         alt="Paper" class="pub-icon">
+    <a href="{{ p.links.paper }}" target="_blank" class="pub-link">
+      <img src="{{ '/assets/icons/paper3.svg' | relative_url }}" alt="Paper" class="pub-icon">
     </a>
   {%- endif -%}
-</p>
+  </p>
 {%- endfor -%}
 
 
@@ -58,7 +57,7 @@ layout: single
 {%- for group in sorted_groups -%}
   {%- assign y = group.name | plus: 0 -%}
 
-  {%- if y < 2025 -%}
+  {%- if y < 2026 -%}
     {%- if before_printed == false -%}
       <h4 class="pub-year">-2025</h4>
       {%- assign before_printed = true -%}
@@ -81,7 +80,7 @@ layout: single
       {%- endif -%}
       {%- if p.links.paper and p.links.paper != "" %}
         <a href="{{ p.links.paper }}" target="_blank" class="pub-link">
-          <img src="{{ '/assets/icons/paper2.svg' | relative_url }}" alt="Paper" class="pub-icon">
+          <img src="{{ '/assets/icons/paper4.svg' | relative_url }}" alt="Paper" class="pub-icon">
         </a>
       {%- endif -%}
     </p>
