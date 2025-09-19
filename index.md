@@ -11,29 +11,36 @@ entries_layout: list
 
 
 
-
 ## To Do
 
 * Home
+  * Image color
   * Brief introduction of our lab
   * Simple research info
   * Navigation bar - combine pages?
+  * Mobile navigation bar changed
 * Research
   * Edit keywords
   * Image?
-  * Name of author?
+  * Names?
+  * Try different layouts: no card, small image to the left, no toggle
 * Publications
-  * Add arXiv link / paper link
-  * Logo 미세조정
+  * ~~Add professor~~
+  * ~~Add arXiv link / paper link~~
+  * ~~Logo 미세조정~~
   * Add DOI
 * People
   * Professor
-  * Better alumni table
+  * ~~Better alumni table~~
 * Seminar
   * 2024 2 reviews
   * Symposium
-* Publications
-  * Professor
+* Misc.
+  * Remove space at the bottom
+  * Copyright messgae
+  * Contact info at the footer?
+  * ~~Check hyperlinks of page titles~~
+
 
 
 <div class="topics-grid">
