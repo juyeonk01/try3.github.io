@@ -96,9 +96,10 @@ entries_layout: list
 ## To Do
 
 * Home
+  * Background colors for home page
   * Image color
-  * Brief introduction of our lab
-  * Simple research info
+  * ~~Brief introduction of our lab~~
+  * ~~Simple research info~~
   * Navigation bar - combine pages?
   * Mobile navigation bar changed
 * Research
@@ -112,7 +113,7 @@ entries_layout: list
   * ~~Logo 미세조정~~
   * Add DOI
 * People
-  * Professor
+  * Professor: what info? pic? hline?
   * ~~Better alumni table~~
 * Seminar
   * 2024 2 reviews
