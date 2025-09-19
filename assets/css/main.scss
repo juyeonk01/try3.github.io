@@ -274,6 +274,40 @@ body {
   }
 }
 
+.abstract-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;     /* number of lines before cutting */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+.abstract-text.expanded {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.toggle-abstract {
+  background: none;
+  border: none;
+  color: #133DA8;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-abstract .arrow {
+  display: inline-block;
+  margin-right: 5px;
+  transition: transform 0.2s ease;
+}
+
+.toggle-abstract.open .arrow {
+  transform: rotate(90deg);
+}
 
 
 

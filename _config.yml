@@ -66,6 +66,9 @@ collections:
 atom_feed:
   hide: true
 
+footer_scripts:
+  - /assets/js/custom.js
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

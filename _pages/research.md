@@ -6,6 +6,24 @@ classes: research-page
 
 <hr>
 
+<div class="research-entry">
+  <h3 class="research-title">Mixing Samples to Address Weak Overlap in Causal Inference</h3>
+  <p class="research-meta">
+    <span class="keywords">Overlap, Mixing</span><br>
+    <span class="authors">Jaehyuk Jang, Suehyun Kim</span>
+  </p>
+
+  <div class="abstract">
+    <p class="abstract-text">
+      In observational studies, the assumption of sufficient overlap (positivity) is fundamental for the identification and estimation of causal effects. Failing to account for this assumption yields inaccurate and potentially infeasible estimators. To address this issue, we introduce a simple yet novel approach, <i>mixing</i>, which mitigates overlap violations by constructing a synthetic treated group that combines treated and control units. Our strategy contributes to weighting literature with several advantages. First, it improves the accuracy of the estimators by preserving unbiasedness while reducing variance. This phenomenon results from the shrinkage of propensity scores in the mixed sample, which enhances robustness to poor overlap, but remains effective regardless of the overlap level. Second, it enables direct estimation of the target estimand without discarding extreme observations or modifying the target population. Third, the mixing approach is highly adaptable to various weighting schemes, including contemporary methods such as entropy balancing. Fourth, it serves as an indirect method to diagnose model misspecification. We illustrate its empirical performance through extensive simulation studies. We also introduce a practical guidance for diagnosing and tackling limited overlap with an analysis of chronic obstructive pulmonary disease (COPD) dataset provided by Samsung Medical Center. Through our strategy, we investigate whether small airway disease (SAD) precedes emphysema progression among early-stage COPD patients.
+    </p>
+    <button class="toggle-abstract"><span class="arrow">▶</span> Show more</button>
+  </div>
+</div>
+
+
+<hr>
+
 <div class="project">
     <h3>Mixing Samples to Address Weak Overlap in Causal Inference</h3>
     <p class="keywords">Overlap, Mixing</p>
