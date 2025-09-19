@@ -1,5 +1,5 @@
 ---
-title: Projects
+title: Research
 layout: single
 classes: research-page
 ---
@@ -33,7 +33,7 @@ classes: research-page
 
 <div class="research-entry">
   <div class="research-image">
-    <img src="{{ '/assets/images/project-mixing.jpg' | relative_url }}" alt="Project thumbnail">
+    <img src="{{ '/assets/images/project-overlap.jpg' | relative_url }}" alt="Project thumbnail">
   </div>
   <div class="research-content">
     <h3 class="research-title">Quantifying Overlap in Causal Inference: A Framework for Early-Stage Assessment</h3>
@@ -54,7 +54,7 @@ classes: research-page
 
 <div class="research-entry">
 <div class="research-image">
-    <img src="{{ '/assets/images/project-mixing.jpg' | relative_url }}" alt="Project thumbnail">
+    <img src="{{ '/assets/images/project-highdim.jpg' | relative_url }}" alt="Project thumbnail">
   </div>
   <div class="research-content">
     <h3 class="research-title">Distributional Matching for Observational Studies with High-Dimensional Covariates</h3>
@@ -75,7 +75,7 @@ classes: research-page
 
 <div class="research-entry">
   <div class="research-image">
-    <img src="{{ '/assets/images/project-mixing.jpg' | relative_url }}" alt="Project thumbnail">
+    <img src="{{ '/assets/images/project-netflix.jpg' | relative_url }}" alt="Project thumbnail">
   </div>
   <div class="research-content">
     <h3 class="research-title">Causal Impact of OTT Service on IPTV Viewing: Time-Series Cross-Sectional Data Matching</h3>
@@ -96,7 +96,7 @@ classes: research-page
 
 <div class="research-entry">
   <div class="research-image">
-    <img src="{{ '/assets/images/project-mixing.jpg' | relative_url }}" alt="Project thumbnail">
+    <img src="{{ '/assets/images/project-interaction.jpg' | relative_url }}" alt="Project thumbnail">
   </div>
   <div class="research-content">
     <h3 class="research-title">Randomization-Based Inference for Causal Interaction with Sensitivity Analysis</h3>
