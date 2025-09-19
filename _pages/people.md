@@ -40,7 +40,16 @@ layout: single
 
 <h2 class="people-title">Alumni</h2>
 
-<div class="alumni-wrap">
+<div class="alumni-list">
+  <ul>
+    <li>Junho Jang, M.S. (2025), Bank of Korea</li>
+    <li>Sangjin Lee, M.S. (2025), Ph.D. Student at Ghent University</li>
+    <li>Jaehyuk Jang, M.S. (2025), Ph.D. Student at Rutgers University</li>
+    <li>Suhwan Bong, M.S. (2024), Ph.D. Student at Harvard University</li>
+  </ul>
+</div>
+
+<!-- <div class="alumni-wrap">
   <table class="alumni-table">
     <thead>
       <tr>
@@ -59,4 +68,8 @@ layout: single
       {% endfor %}
     </tbody>
   </table>
-</div>
+</div> -->
+
+
+
+

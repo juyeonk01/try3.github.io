@@ -125,30 +125,41 @@
 }
 
 /* Alumni */
-.alumni-wrap {
-  max-width: 900px;         
-  margin: 2rem auto;     
-  width: 70%;
+// .alumni-wrap {
+//   max-width: 900px;         
+//   margin: 2rem auto;     
+//   width: 70%;
+// }
+
+// /* Let the table fill the wrapper, not the whole page */
+// .page__content .alumni-table {
+//   width: 100%;
+//   border-collapse: collapse;
+//   /* MM often sets tables to display:block; override so width behaves predictably */
+//   display: table !important;
+// }
+
+// /* Cell spacing */
+// .alumni-table th,
+// .alumni-table td {
+//   padding: 0.9rem 1.25rem;
+//   text-align: left;
+//   border-bottom: 1px solid #ddd;
+// }
+
+// .alumni-table th { font-weight: 500; text-align: left; }
+// .alumni-table td:first-child { font-weight: 500; }
+
+.alumni-list {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 800px;    
+  margin: 0 auto;   
+  text-align: left;  
 }
 
-/* Let the table fill the wrapper, not the whole page */
-.page__content .alumni-table {
-  width: 100%;
-  border-collapse: collapse;
-  /* MM often sets tables to display:block; override so width behaves predictably */
-  display: table !important;
-}
 
-/* Cell spacing */
-.alumni-table th,
-.alumni-table td {
-  padding: 0.9rem 1.25rem;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-}
 
-.alumni-table th { font-weight: 500; text-align: left; }
-.alumni-table td:first-child { font-weight: 500; }
 
 .layout--person h2 {
   margin-top: 2rem !important;

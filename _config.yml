@@ -17,8 +17,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Causal Inference Lab
-url: "https://juyeonk01.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/try3.github.io/" # the subpath of your site, e.g. /blog
+url: "https://juyeonk01.github.io" 
+baseurl: "/try3.github.io/" 
 
 logo: "/assets/images/snu-logo.png"
 
