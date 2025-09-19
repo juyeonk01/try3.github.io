@@ -45,30 +45,30 @@ entries_layout: list
 
 <div class="topics-grid">
   <div class="topic-card">
-    <div class="icon">🎯</div>
+    <div class="icon"><i class="fas fa-link"></i></div>
     <h4>Matching and Weighting</h4>
     <p>Techniques that aim to balance covariates between treated and control groups in observational studies, either by pairing similar units (matching) or reweighting samples to create pseudo-populations that approximate randomized experiments.</p>
   </div>
   
   <div class="topic-card">
-    <div class="icon">📊</div>
+    <div class="icon"><i class="fas fa-dice"></i></div>
     <h4>Randomization Designs and Analysis</h4>
     <p>Approaches that leverage random assignment in experimental studies—such as complete, block, or cluster randomization—and the corresponding analytical frameworks that ensure unbiased estimation of treatment effects.</p>
   </div>
   
   <div class="topic-card">
-    <div class="icon">🤖</div>
+    <div class="icon"><i class="fas fa-shield-alt"></i></div>
     <h4>Sensitivity Analysis</h4>
     <p>Methods to assess how robust causal conclusions are to violations of assumptions, such as unmeasured confounding or model misspecification.tion.</p>
   </div>
   <div class="topic-card">
-    <div class="icon">🎯</div>
+    <div class="icon"><i class="fas fa-users"></i></div>
     <h4>Heterogeneous Treatment Effects</h4>
     <p>Frameworks for studying how treatment effects vary across subgroups or individuals, often using machine learning or interaction models to uncover effect modifiers.</p>
   </div>
   
   <div class="topic-card">
-    <div class="icon">🤖</div>
+    <div class="icon"><i class="fas fa-random"></i></div>
     <h4>Instrumental Variables</h4>
     <p>Estimation techniques that exploit external sources of variation (instruments) to address unmeasured confounding.</p>
   </div>
